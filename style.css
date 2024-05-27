@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.glass {
+z-index: -4;
+
+position: absolute;
+left: 80px;
+top: 400px;
+width: 555px;
+
+height: 563px;
+
+background: rgba(255, 255, 255, .1);
+
+box-shadow: 0 25px 45px ☐ rgba(0, 0, 0, .2);
+
+border-radius: 50px;
+
+border: 2px solid rgba(255, 255, 255, .5);
+
+border-right: 2px solid rgba(255, 255, 255, .2);
+
+border-bottom: 2px solid rgba(255, 255, 255, .2);
+
+backdrop-filter: blur(10px);
+justify-content: center;
+}
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+body {
+    background-color: #011627;
+    background: url('content://media/external/downloads/29973');
+    background-repeat: no-repeat;
+  background-size:720px 1600px;
+  
+}
+/*h1 tag here*/
+@keyframes appear {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+.tubelight-effect{
+    position: fixed;
+    text-align: center;
+    left:80px;
+    margin: 0;
+    top:20px;
+    display: inline-blockblock;
+}
+h1.tubelight-effect span {
+    opacity: 0;
+    display: inline-block;
+    animation: appear 4s forwards ;
+    font-family: "Oswald", sans-serif;
+    font-weight: bolder;
+    font-size: 100px;
+    color: #7DF9FF;
+    text-align: center;
+    background: linear-gradient(to right, #FF69B4, #00BFFF); /* Pink to Blue gradient */ 
+ -webkit-background-clip: text; -webkit-text-fill-color: transparent;     
+}
+h1.tubelight-effect span ::before { content: attr(data-); 
+/* Duplicate the text */ position: absolute; 
+top: 5px; /* Adjust as needed for 3D effect */
+ left: 5px; /* Adjust as needed for 3D effect */ color: rgba(0, 0, 0, 0.5); /* Shadow color */ z-index: -1; /* Place shadow behind the text */ } }
+h1.tubelight-effect span:nth-child(1)
+{ animation-delay: 0s,0s;}
+h1.tubelight-effect span:nth-child(2) { animation-delay: 0s, 12s; }
+h1.tubelight-effect span:nth-child(3) { animation-delay: 0.5s, 11.5s; }
+h1.tubelight-effect span:nth-child(4) { animation-delay: 1s, 11s; }
+h1.tubelight-effect span:nth-child(5) { animation-delay: 1.5s, 10.5s; }
+h1.tubelight-effect span:nth-child(6) { animation-delay: 2s, 10s; }
+h1.tubelight-effect span:nth-child(7) { animation-delay: 2.5s, 9.5s; }
+h1.tubelight-effect span:nth-child(8) { animation-delay: 3s, 9s; }
+h1.tubelight-effect span:nth-child(9) { animation-delay: 3.5s, 8.5s; }
+h1.tubelight-effect span:nth-child(10) { animation-delay: 4s, 8s; }
+h1.tubelight-effect span:nth-child(11) { animation-delay: 4.5s, 7.5s; }
+h1.tubelight-effect span:nth-child(12) { animation-delay: 5s, 7s; }
+h1.tubelight-effect span:nth-child(13) { animation-delay: 5.5s, 6.5s; }
+h1.tubelight-effect span:nth-child(14) { animation-delay: 6s, 6s; }
+
+.bigb {
+
+position: fixed;
+
+top: 40%;
+
+left: 50%;
+
+height: 300px;
+
+transform: translate(-50%,-50%);
+
+display: flex;
+
+flex-direction: column;
+
+align-items: center;
+
+}
+
+.mediumb1,
+.mediumb2,
+.mediumb3 {
+    display:flex;
+    align-content: center;
+    justify-content: center; 
+    margin-bottom: 5px; 
+}
+
+.button {
+   background-color: black;
+    height: 130px;
+    width: 130px;
+    margin: 0 5px;
+    color: red; 
+    animation: bounceIn 0.5s ease-in-out;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  border-radius: 20%;
+    }
+    
+.winner{
+     padding: 20px 60px 20px 60px;
+      background: #ff69b4;
+       color: white;
+        border-radius: 10px; 
+        text-align: center;
+        display: inline-block;
+        align-content: center;
+        width: 500px;
+        position: absolute;
+        left: 100px;
+        top: 200px;
+        font-size: 30px;
+        text-shadow: 0 0 10px rgba(255, 255, 0, 0.8), /* Yellow outer glow */ 0 0 20px rgba(255, 255, 0, 0.6), 0 0 30px rgba(255, 255, 0, 0.4); 
+}
+.winner::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ff2b74;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+/* glow */
+.winner::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #FF0000, #FF7300, #FFFB00, #48FF00,
+    #00FFD5, #002BFF, #FF00C8, #FF0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height:  calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+  opacity: 1;  /* Always visible */
+}
+
+@keyframes glowing {
+  0% {background-position: 0 0;}
+  50% {background-position: 400% 0;}
+  100% {background-position: 0 0;}
+}
+
+
+
+.show {
+ display: block;
+ animation: pop 0.5s ease-in-out forwards; }
+ 
+ @keyframes pop { 0% { transform: scale(0); opacity: 0; } 50% { transform: scale(1.2); opacity: 1; } 100% { transform: scale(1); opacity: 1; } }
+
+.text{
+    color: #ff69b4;
+text-shadow: 0 0 5px #ffffff, 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 40px #ff69b4, 0 0 80px #ff69b4;
+
+    font-size: 70px; 
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+.reset {
+  margin: 100px;
+  padding: 15px 40px;
+  height: 80px;
+    width: 380px;
+    position: fixed;
+    top: 1100px;
+    left: 90px;
+  border: none;
+  outline: none;
+  color: #ff00c7;  
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+  font-weight: bolder;
+  font-size: 50px;
+  font-family: 'Roboto';
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 
+               0 0 10px rgba(255, 255, 255, 0.8), 
+               0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+.reset::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+/* glow */
+.reset::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #FF0000, #FF7300, #FFFB00, #48FF00,
+    #00FFD5, #002BFF, #FF00C8, #FF0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height:  calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+  opacity: 1;  /* Always visible */
+}
+
+@keyframes glowing {
+  0% {background-position: 0 0;}
+  50% {background-position: 400% 0;}
+  100% {background-position: 0 0;}
+}
+
+.reset:active::after {
+  background: transparent;
+}
+
+.reset:active {
+  color: #000;
+  font-weight: bold;
+}
