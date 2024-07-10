@@ -69,6 +69,7 @@ function resetf() {
       spanElement.style.color = null;
       spanElement.style.textShadow = null;
       spanElement.style.animation = null;
+      winner.textContent = null;
     }
     buttontxt.innerText = null;
   });
