@@ -66,7 +66,7 @@ body {
     left:80px;
     margin: 0;
     top:20px;
-    display: inline-blockblock;
+    display: inline-block;
 }
 h1.tubelight-effect span {
     opacity: 0;
@@ -78,12 +78,13 @@ h1.tubelight-effect span {
     color: #7DF9FF;
     text-align: center;
     background: linear-gradient(to right, #FF69B4, #00BFFF); /* Pink to Blue gradient */ 
- -webkit-background-clip: text; -webkit-text-fill-color: transparent;     
+ -webkit-background-clip: text; 
+ -webkit-text-fill-color: transparent;     
 }
 h1.tubelight-effect span ::before { content: attr(data-); 
 /* Duplicate the text */ position: absolute; 
 top: 5px; /* Adjust as needed for 3D effect */
- left: 5px; /* Adjust as needed for 3D effect */ color: rgba(0, 0, 0, 0.5); /* Shadow color */ z-index: -1; /* Place shadow behind the text */ } }
+ left: 5px; /* Adjust as needed for 3D effect */ color: rgba(0, 0, 0, 0.5); /* Shadow color */ z-index: -1; /* Place shadow behind the text */ } 
 h1.tubelight-effect span:nth-child(1)
 { animation-delay: 0s,0s;}
 h1.tubelight-effect span:nth-child(2) { animation-delay: 0s, 12s; }
