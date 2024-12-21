@@ -61,7 +61,7 @@ background-size:1000px 2000px;
 }
 
 .tubelight-effect{
-  position: fixed;
+  position: absolute;
   text-align: center;
   left:90px;
   margin: 0;
