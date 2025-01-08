@@ -1,14 +1,22 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+.title{
+  display: flex;
+  flex-direction: row;
+  height:12vh;
+  width: 100%;
+}
 .glass {
-z-index: -4;
-
+z-index: -2;
+top:40vh;
 position: absolute;
-left: 16%;
-top: 30%;
+left: 50vw;
+transform: translate(-50%, -50%);
+
 width: 700px;
 
 height: 700px;
@@ -26,7 +34,12 @@ border-right: 2px solid rgba(255, 255, 255, .2);
 border-bottom: 2px solid rgba(255, 255, 255, .2);
 
 backdrop-filter: blur(10px);
-justify-content: center;
+
+}
+ @media (min-width: 999px) {
+  .glass {
+    top: 65vh;  /* For larger screens (laptops) */
+  }
 }
 @keyframes bounceIn {
   0% {
@@ -47,10 +60,12 @@ justify-content: center;
 
 
 body {
+  position:relative;
   background-color: #011627;
   background: url(TTT.png);
   background-repeat: no-repeat;
 background-size:1000px 2000px;
+
 
 }
 /*h1 tag here*/
@@ -61,16 +76,17 @@ background-size:1000px 2000px;
 }
 
 .tubelight-effect{
-  position: fixed;
+  position: absolute;
   text-align: center;
   left:90px;
   margin: 0;
-  top:20px;
-  display: inline-block;
+  top:5vh;
+ 
 }
 h1.tubelight-effect span {
   opacity: 0;
-  display: inline-block;
+
+
   animation: appear 4s forwards ;
   font-family: "Oswald", sans-serif;
   font-weight: bolder;
@@ -78,7 +94,8 @@ h1.tubelight-effect span {
   color: #7DF9FF;
   text-align: center;
   background: linear-gradient(to right, #d20a85, #00a2ff); /* Pink to Blue gradient */ 
- -webkit-background-clip: text; 
+  background-clip: text;
+    -webkit-background-clip: text; 
  -webkit-text-fill-color: transparent;     
 }
 h1.tubelight-effect span ::before {
@@ -215,16 +232,16 @@ text-shadow: 0 0 5px #ffffff, 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 40px #ff69
 .reset {
 margin: 100px;
 padding: 15px 40px;
-height: 30%px;
   width: 380px;
-  position: fixed;
-  left: 23%;
-  top: 1300px;
+  position: absolute;
+  left: 42vw;
+  top: 68vh;
+  transform: translate(-50%, -50%);
 border: none;
 outline: none;
 color: #ff00c7;  
 cursor: pointer;
-position: relative;
+
 z-index: 0;
 border-radius: 12px;
 font-weight: bolder;
@@ -234,7 +251,13 @@ text-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
              0 0 10px rgba(255, 255, 255, 0.8), 
              0 0 15px rgba(255, 255, 255, 0.8);
 }
-
+@media (min-width: 999px) {
+  .reset {
+    top: 110vh;    /* For larger screens (laptops) */
+  left: 50vw;
+  width: 380px*2;
+  }
+}
 .reset::after {
 content: "";
 z-index: -1;
