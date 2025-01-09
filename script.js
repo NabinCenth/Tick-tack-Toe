@@ -1,3 +1,27 @@
+let audio=document.querySelector("audio");
+let audbtn=document.querySelector(".stop");
+let clickaud=document.querySelector(".clickaudio");
+ let state=0;
+ let allbtn=document.querySelectorAll("button");
+ allbtn.forEach((btn)=>{
+   btn.addEventListener("click",()=>{
+     clickaud.play();
+   });
+ });
+audbtn.addEventListener("click",()=>{
+ 
+  if(state==0){
+    audio.play();
+    audbtn.style.backgroundImage="url('soundon.png')";
+    state=1;
+  }
+  else if(state==1){
+    audio.pause();
+    state=0;
+    audbtn.style.backgroundImage="url('soundoff.png')";
+  }
+
+});
 let a = 0;
 let buttons = document.querySelectorAll(".button");
 const winningPatterns = [

@@ -330,3 +330,14 @@ background: transparent;
 color: #000;
 font-weight: bold;
 }
+.stop {
+  position: absolute;
+  background-image: url('soundoff.png');
+  background-color: #ffffff;
+  background-size: cover; /* Ensure the image covers the button */
+  width: 8vw; /* Set button width */
+  height: 8vw; /* Set button height */
+  right: 0;
+  top: 5vh;
+  border-radius: 50%;
+}
