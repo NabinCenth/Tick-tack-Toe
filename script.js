@@ -1,4 +1,4 @@
-let audio=document.querySelector("audio");
+let audio=document.querySelector(".audio1");
 let audbtn=document.querySelector(".stop");
 let clickaud=document.querySelector(".clickaudio");
  let state=0;
