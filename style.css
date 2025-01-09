@@ -39,7 +39,7 @@ backdrop-filter: blur(10px);
 }
  @media (min-width: 999px) {
   .glass {
-    top: 85vh;  /* For larger screens (laptops) */
+    top: 110vh;  /* For larger screens (laptops) */
   }
 }
 @keyframes bounceIn {
@@ -72,9 +72,11 @@ background-size:1000px 2000px;
 
 @media (min-width: 999px) {
   body {
+    transform: scale(0.5);
     background: url(TTTd.png);
     background-repeat: no-repeat;
     background-size: cover;
+    
   }
 }
 /*h1 tag here*/
@@ -193,7 +195,7 @@ border-radius: 20%;
 @media (min-width: 999px) {
   .winner {
     top: -25%;
-    left: 5vw;  /* For larger screens (laptops) */
+    left: 3vw;  /* For larger screens (laptops) */
   }
 }
 .winner::after {
@@ -274,7 +276,7 @@ text-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
 }
 @media (min-width: 999px) {
   .reset {
-    top: 130vh;    /* For larger screens (laptops) */
+    top: 165vh;    /* For larger screens (laptops) */
   left: 43vw;
   width: 380px*2;
   transform: translate(-50%, -50%);
