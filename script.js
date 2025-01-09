@@ -1,3 +1,4 @@
+alert("Use the inspect element for the Desktop");
 let a = 0;
 let buttons = document.querySelectorAll(".button");
 const winningPatterns = [
