@@ -11,8 +11,9 @@
   width: 100%;
 }
 .glass {
+ 
 z-index: -2;
-top:40vh;
+top:50vh;
 position: absolute;
 left: 50vw;
 transform: translate(-50%, -50%);
@@ -38,7 +39,7 @@ backdrop-filter: blur(10px);
 }
  @media (min-width: 999px) {
   .glass {
-    top: 65vh;  /* For larger screens (laptops) */
+    top: 85vh;  /* For larger screens (laptops) */
   }
 }
 @keyframes bounceIn {
@@ -78,10 +79,15 @@ background-size:1000px 2000px;
 .tubelight-effect{
   position: absolute;
   text-align: center;
-  left:90px;
+  left:50vw;
+  transform: translate(-50%, -50%);
+  display: flex;           /* Enable flexbox */
+  justify-content: center; /* Center content horizontally */
+  align-items: center;     /* Center content vertically */
+  text-align: center; 
   margin: 0;
   top:5vh;
- 
+  padding: 10px;
 }
 h1.tubelight-effect span {
   opacity: 0;
@@ -165,15 +171,22 @@ border-radius: 20%;
      color: white;
       border-radius: 40%; 
       text-align: center;
-      display: inline-block;
+     
       height: 150px;
+      transform: translate(-50%,-50%);
       align-content: center;
       width: 600px;
       position: absolute;
-      left: 20%;
-      top: 15%;
+      left: 6vw;
+      top: -34%;
       font-size: 30px;
       text-shadow: 0 0 10px rgb(255, 255, 0), /* Yellow outer glow */ 0 0 20px rgba(255, 255, 0, 0.995), 0 0 30px rgba(255, 255, 0, 0.4); 
+}
+@media (min-width: 999px) {
+  .winner {
+    top: -25%;
+    left: 5vw;  /* For larger screens (laptops) */
+  }
 }
 .winner::after {
 content: "";
@@ -235,17 +248,17 @@ padding: 15px 40px;
   width: 380px;
   position: absolute;
   left: 42vw;
-  top: 68vh;
+  top: 74vh;
   transform: translate(-50%, -50%);
 border: none;
 outline: none;
-color: #ff00c7;  
+color: #008080;  
 cursor: pointer;
 
 z-index: 0;
 border-radius: 12px;
 font-weight: bolder;
-font-size: 50px;
+font-size: 70px;
 font-family: 'Roboto';
 text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 
              0 0 10px rgba(255, 255, 255, 0.8), 
@@ -253,9 +266,10 @@ text-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
 }
 @media (min-width: 999px) {
   .reset {
-    top: 110vh;    /* For larger screens (laptops) */
-  left: 50vw;
+    top: 130vh;    /* For larger screens (laptops) */
+  left: 43vw;
   width: 380px*2;
+  transform: translate(-50%, -50%);
   }
 }
 .reset::after {
