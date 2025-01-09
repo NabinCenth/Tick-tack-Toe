@@ -13,7 +13,7 @@
 .glass {
  
 z-index: -2;
-top:50vh;
+top:45vh;
 position: absolute;
 left: 50vw;
 transform: translate(-50%, -50%);
@@ -68,6 +68,14 @@ body {
 background-size:1000px 2000px;
 
 
+}
+
+@media (min-width: 999px) {
+  body {
+    background: url(TTTd.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 /*h1 tag here*/
 @keyframes appear {
@@ -178,7 +186,7 @@ border-radius: 20%;
       width: 600px;
       position: absolute;
       left: 6vw;
-      top: -34%;
+      top: -38%;
       font-size: 30px;
       text-shadow: 0 0 10px rgb(255, 255, 0), /* Yellow outer glow */ 0 0 20px rgba(255, 255, 0, 0.995), 0 0 30px rgba(255, 255, 0, 0.4); 
 }
@@ -247,7 +255,7 @@ margin: 100px;
 padding: 15px 40px;
   width: 380px;
   position: absolute;
-  left: 42vw;
+  left: 40vw;
   top: 74vh;
   transform: translate(-50%, -50%);
 border: none;
